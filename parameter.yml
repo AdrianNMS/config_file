@@ -1,8 +1,14 @@
 spring:
-  config:
-    location:
-      optional:
-        common.yml
+  data:
+    mongodb:
+    uri:
+      mongodb:
+        host:
+          localhost
+        port:
+          27017
+        database:
+          spring_boot
 server:
   port:
     8087
