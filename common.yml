@@ -11,4 +11,4 @@ spring:
         listar-chunked,*chunked*
   config:
     import:
-      - eureka.yml
+      - eureka-client.yml

@@ -4,7 +4,7 @@ spring:
 
   config:
     import:
-      - eureka.yml
+      - eureka-client.yml
   ##GATEWAY CONFIGURATIONS
   cloud:
     gateway:
