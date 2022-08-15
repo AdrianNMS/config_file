@@ -1,14 +1,8 @@
 spring:
   config:
-    location:
-      optional:
-        common.yml
-  thymeleaf:
-    reactive:
-      max-chunk-size:
-        1024
-      chunked-mode-view-names:
-        listar-chunked,*chunked*
+    import:
+      - common.yml
+      - api.yml
 server:
   port:
     8081

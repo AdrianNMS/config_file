@@ -1,8 +1,8 @@
 spring:
   config:
-    location:
-      optional:
-        common.yml
+    import:
+      - common.yml
+      - api.yml
 server:
   port:
     8080
