@@ -1,0 +1,69 @@
+spring:
+  application:
+    name: api-gateway
+
+  config:
+    import:
+      - eureka.yml
+  ##GATEWAY CONFIGURATIONS
+  cloud:
+    gateway:
+      routes:
+        ## CLIENT
+        - id: client
+          uri: http://localhost:8080
+          predicates:
+            - Path=/client/**
+          filters:
+            - StripPrefix=1
+        ## PERSON
+        - id: person
+          uri: http://localhost:8081
+          predicates:
+            - Path=/person/**
+          filters:
+            - StripPrefix=1
+        ## PASIVE
+        - id: pasive
+          uri: http://localhost:8082
+          predicates:
+            - Path=/pasive/**
+          filters:
+            - StripPrefix=1
+        ## ACTIVE
+        - id: active
+          uri: http://localhost:8083
+          predicates:
+            - Path=/active/**
+          filters:
+            - StripPrefix=1
+        ## MOVEMENT
+        - id: movement
+          uri: http://localhost:8084
+          predicates:
+            - Path=/movement/**
+          filters:
+            - StripPrefix=1
+        ## PAYMENT
+        - id: payment
+          uri: http://localhost:8085
+          predicates:
+            - Path=/payment/**
+          filters:
+            - StripPrefix=1
+        ## TRANSACTION
+        - id: transaction
+          uri: http://localhost:8086
+          predicates:
+            - Path=/transaction/**
+          filters:
+            - StripPrefix=1
+        ## PARAMETER
+        - id: parameter
+          uri: http://localhost:8087
+          predicates:
+            - Path=/parameter/**
+          filters:
+            - StripPrefix=1
+server:
+  port: 8850

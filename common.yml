@@ -9,10 +9,6 @@ spring:
         1024
       chunked-mode-view-names:
         listar-chunked,*chunked*
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8999/eureka
-    instance:
-      preferIpAddress: true
+  config:
+    import:
+      - eureka.yml
