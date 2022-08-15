@@ -1,14 +1,8 @@
 spring:
-  data:
-    mongodb:
-    uri:
-      mongodb://localhost:27017/spring_boot
-  thymeleaf:
-    reactive:
-      max-chunk-size:
-        1024
-      chunked-mode-view-names:
-        listar-chunked,*chunked*
+  config:
+    location:
+      optional:
+        common.yml
 server:
   port:
     8080
