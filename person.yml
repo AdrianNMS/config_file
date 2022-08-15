@@ -3,10 +3,6 @@ server:
     8081
 
 spring:
-  data:
-    mongodb:
-      uri:
-        mongodb://localhost:27017/spring_boot
   thymeleaf:
     reactive:
       max-chunk-size:
