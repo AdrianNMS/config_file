@@ -1,12 +1,8 @@
 spring:
   data:
     mongodb:
-    uri:
-      mongodb:
-        port:
-          27017
-        database:
-          spring_boot
+      uri:
+        mongodb://localhost:27017/spring_boot
 server:
   port:
     8087
