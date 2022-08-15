@@ -1,14 +1,8 @@
 spring:
   data:
     mongodb:
-    uri:
-      mongodb:
-        host:
-          localhost
-        port:
-          27017
-        database:
-          spring_boot
+      uri:
+        mongodb://localhost:27017/spring_boot
   thymeleaf:
     reactive:
       max-chunk-size:
