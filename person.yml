@@ -1,3 +1,9 @@
+spring:
+  config:
+    location:
+      optional:
+      - common.yml
+      - api.yml
 server:
   port:
     8081
