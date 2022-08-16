@@ -3,32 +3,32 @@ app:
     client:
       service:
         url:
-          http://localhost:8080
+          http://localhost:8850/client
     person:
       service:
         url:
-          http://localhost:8081
+          http://localhost:8850/person
     pasive:
       service:
         url:
-          http://localhost:8082
+          http://localhost:8850/pasive
     active:
       service:
         url:
-          http://localhost:8083
+          http://localhost:8850/active
     movement:
       service:
         url:
-          http://localhost:8084
+          http://localhost:8850/movement
     payment:
       service:
         url:
-          http://localhost:8085
+          http://localhost:8850/payment
     transaction:
       service:
         url:
-          http://localhost:8086
+          http://localhost:8850/transaction
     parameter:
       service:
         url:
-          http://localhost:8087
+          http://localhost:8850/parameter
