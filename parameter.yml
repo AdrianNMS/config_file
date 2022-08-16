@@ -8,10 +8,7 @@ server:
     8087
 
 management:
-  security:
-    enabled: false
-
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: '*'
