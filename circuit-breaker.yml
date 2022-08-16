@@ -14,6 +14,7 @@ resilience4j:
         waitDurationInOpenState: 10000
         permittedNumberOfCallsInHalfOpenState: 3
         automaticTransitionFromOpenToHalfOpenEnabled: true
+
 management:
   health:
     circuitbreakers:
