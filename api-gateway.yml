@@ -65,5 +65,19 @@ spring:
             - Path=/parameter/**
           filters:
             - StripPrefix=1
+        ## DEBITCARD
+        - id: debitcard
+          uri: http://localhost:8089
+          predicates:
+            - Path=/debitcard/**
+          filters:
+            - StripPrefix=1
+        ## REPORT
+        - id: report
+          uri: http://localhost:8090
+          predicates:
+            - Path=/report/**
+          filters:
+            - StripPrefix=1
 server:
   port: 8850

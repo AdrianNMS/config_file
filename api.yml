@@ -32,3 +32,11 @@ app:
       service:
         url:
           http://localhost:8850/parameter
+    debitcard:
+      service:
+        url:
+          http://localhost:8850/debitcard
+    report:
+      service:
+        url:
+          http://localhost:8850/report
