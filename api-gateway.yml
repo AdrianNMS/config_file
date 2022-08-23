@@ -81,7 +81,7 @@ spring:
             - StripPrefix=1
         ## REPORT
         - id: person2
-          uri: http://localhost:8091
+          uri: http://localhost:8092
           predicates:
             - Path=/person2/**
           filters:
