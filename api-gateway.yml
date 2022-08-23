@@ -74,7 +74,7 @@ spring:
             - StripPrefix=1
         ## REPORT
         - id: report
-          uri: http://localhost:8090
+          uri: http://localhost:8091
           predicates:
             - Path=/report/**
           filters:
