@@ -40,3 +40,7 @@ app:
       service:
         url:
           http://localhost:8850/report
+    person2:
+      service:
+        url:
+          http://localhost:8850/person2

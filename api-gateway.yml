@@ -79,5 +79,12 @@ spring:
             - Path=/report/**
           filters:
             - StripPrefix=1
+        ## REPORT
+        - id: person2
+          uri: http://localhost:8091
+          predicates:
+            - Path=/person2/**
+          filters:
+            - StripPrefix=1
 server:
   port: 8850
