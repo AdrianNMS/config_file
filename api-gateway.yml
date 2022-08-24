@@ -79,11 +79,18 @@ spring:
             - Path=/report/**
           filters:
             - StripPrefix=1
-        ## REPORT
+        ## PERSON2
         - id: person2
           uri: http://localhost:8092
           predicates:
             - Path=/person2/**
+          filters:
+            - StripPrefix=1
+        ## PERSON3
+        - id: person3
+          uri: http://localhost:8093
+          predicates:
+            - Path=/person3/**
           filters:
             - StripPrefix=1
 server:

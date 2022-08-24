@@ -44,3 +44,7 @@ app:
       service:
         url:
           http://localhost:8850/person2
+    person3:
+      service:
+        url:
+          http://localhost:8850/person3
