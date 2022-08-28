@@ -3,6 +3,10 @@ spring:
     import:
       - common.yml
       - api.yml
+  redis:
+    port: 6379
+    host: localhost
+
 server:
   port:
     8081
