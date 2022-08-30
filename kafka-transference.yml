@@ -7,11 +7,11 @@ spring:
       value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
 
       properties:
-        spring.json.type.mapping : "MovementRegister:com.bank.movement.models.documents.MovementRegister"
+        spring.json.type.mapping : "ResponseTransference:com.bank.transference.models.kafka.ResponseTransference"
         spring.json.trusted.packages: "*"
         spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
 
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-      properties.spring.json.type.mapping : "MovementRegister:com.bank.payment.models.documents.MovementRegister"
+      properties.spring.json.type.mapping : "RequestWallet:com.bank.transference.models.kafka.RequestWallet,RequestYanki:com.bank.transference.models.kafka.RequestYanki"

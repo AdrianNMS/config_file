@@ -2,7 +2,7 @@ spring:
   config:
     import:
       - common.yml
-      - kafka.yml
+      - kafka-yanki.yml
   redis:
     port: 6379
     host: localhost
