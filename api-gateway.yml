@@ -93,5 +93,26 @@ spring:
             - Path=/person3/**
           filters:
             - StripPrefix=1
+        ## WALLET
+        - id: wallet
+          uri: http://localhost:8094
+          predicates:
+            - Path=/wallet/**
+          filters:
+            - StripPrefix=1
+        ## TRANSFERENCE
+        - id: transference
+          uri: http://localhost:8095
+          predicates:
+            - Path=/transference/**
+          filters:
+            - StripPrefix=1
+        ## YANKI
+        - id: yanki
+          uri: http://localhost:8096
+          predicates:
+            - Path=/yanki/**
+          filters:
+            - StripPrefix=1
 server:
   port: 8850
